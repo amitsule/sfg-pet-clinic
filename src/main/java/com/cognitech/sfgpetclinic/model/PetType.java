@@ -4,6 +4,9 @@
 
 package com.cognitech.sfgpetclinic.model;
 
+/**
+ * Class used for type of Pet
+ */
 public class PetType
 {
     private String name;
