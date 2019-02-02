@@ -6,6 +6,9 @@ package com.cognitech.sfgpetclinic.model;
 
 import java.time.LocalDate;
 
+/**
+ * Class used for Pet
+ */
 public class Pet
 {
     private PetType petType;
