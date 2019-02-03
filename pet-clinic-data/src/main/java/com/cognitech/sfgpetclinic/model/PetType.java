@@ -7,7 +7,7 @@ package com.cognitech.sfgpetclinic.model;
 /**
  * Class used for type of Pet
  */
-public class PetType
+public class PetType extends BaseEntity
 {
     private String name;
 
