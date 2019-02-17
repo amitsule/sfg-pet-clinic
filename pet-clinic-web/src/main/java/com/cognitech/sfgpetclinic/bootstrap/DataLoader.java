@@ -8,8 +8,7 @@ import com.cognitech.sfgpetclinic.model.Owner;
 import com.cognitech.sfgpetclinic.model.Vet;
 import com.cognitech.sfgpetclinic.services.OwnerService;
 import com.cognitech.sfgpetclinic.services.VetService;
-import com.cognitech.sfgpetclinic.services.map.OwnerServiceMap;
-import com.cognitech.sfgpetclinic.services.map.VetServiceMap;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -19,10 +18,11 @@ public class DataLoader implements CommandLineRunner
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader()
+    @Autowired          //--- Not needed for Spring 5
+    public DataLoader(OwnerService ownerService, VetService vetService)
     {
-        this.ownerService = new OwnerServiceMap();
-        this.vetService = new VetServiceMap();
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override

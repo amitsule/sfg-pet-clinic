@@ -6,9 +6,11 @@ package com.cognitech.sfgpetclinic.services.map;
 
 import com.cognitech.sfgpetclinic.model.Owner;
 import com.cognitech.sfgpetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService
 {
     @Override

@@ -6,9 +6,11 @@ package com.cognitech.sfgpetclinic.services.map;
 
 import com.cognitech.sfgpetclinic.model.Pet;
 import com.cognitech.sfgpetclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService
 {
     @Override
