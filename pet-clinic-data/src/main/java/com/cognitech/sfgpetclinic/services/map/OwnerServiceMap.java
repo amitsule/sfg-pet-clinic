@@ -5,11 +5,11 @@
 package com.cognitech.sfgpetclinic.services.map;
 
 import com.cognitech.sfgpetclinic.model.Owner;
-import com.cognitech.sfgpetclinic.services.CrudService;
+import com.cognitech.sfgpetclinic.services.OwnerService;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long>
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService
 {
     @Override
     public Set<Owner> findAll()
@@ -39,5 +39,12 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
     public void deleteById(Long id)
     {
         super.deleteById(id);
+    }
+
+    @Override
+    // TODO: 17/02/2019
+    public Owner findByLastName(String lastName)
+    {
+        return null;
     }
 }

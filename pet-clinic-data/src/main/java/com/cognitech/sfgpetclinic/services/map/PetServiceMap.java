@@ -5,11 +5,11 @@
 package com.cognitech.sfgpetclinic.services.map;
 
 import com.cognitech.sfgpetclinic.model.Pet;
-import com.cognitech.sfgpetclinic.services.CrudService;
+import com.cognitech.sfgpetclinic.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long>
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService
 {
     @Override
     public Set<Pet> findAll()
