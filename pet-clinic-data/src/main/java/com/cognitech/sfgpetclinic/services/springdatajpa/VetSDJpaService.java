@@ -8,12 +8,12 @@ import com.cognitech.sfgpetclinic.model.Vet;
 import com.cognitech.sfgpetclinic.repositories.VetRepository;
 import com.cognitech.sfgpetclinic.services.VetService;
 import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 
-import javax.persistence.Entity;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
+@Service
 @Profile("springdatajpa")
 public class VetSDJpaService implements VetService
 {
