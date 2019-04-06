@@ -77,6 +77,8 @@ public class DataLoader implements CommandLineRunner
 
         System.out.println("Specialities loaded........");
 
+        Owner.builder().address("Test").firstName("Test1").build();
+
         Owner owner1 = new Owner();
         owner1.setFirstName("Amit");
         owner1.setLastName("Sule");
