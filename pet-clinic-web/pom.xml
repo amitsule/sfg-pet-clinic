@@ -132,11 +132,6 @@
                         <version>${junit-platform.version}</version>
                     </dependency>
                 </dependencies>
-                <configuration>
-                    <argLine>
-                        --illegal-access=permit
-                    </argLine>
-                </configuration>
             </plugin>
         </plugins>
     </build>
